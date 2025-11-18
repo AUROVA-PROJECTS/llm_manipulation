@@ -131,21 +131,10 @@
                 </span>
                 <span>arXiv (coming soon)</span>
               </a>
-            </span>
-
-            <!-- Github link -->
-            <span class="link-block">
-              <a href=" " target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Code</span>
-              </a>
-            </span>         
+            </span>     
 
             <figure class="image is-fullwidth" style="margin-top: 20px;">
-              <img src="static/images/GeoGraspEvo_scheme.png" alt="Robotic hand finger distribution and parameters." >
+              <img src="static/images/LLMs_scheme.png" alt="Cyclic scheme generated to propose and refine reward functions using several LLMs in the updated Eureka." >
             </figure>
 
           </div>
@@ -224,12 +213,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Grasping objects is a simple task for humans, but transferring this ability to robots is much more complex. Existing methods can be grouped into two categories: analytical and data-driven. In recent years, due to the advancement in 
-          computing capabilities, the research community has shifted its focus to the second group of algorithms. In this article, we propose a novel grasping method called GeoGraspEvo. It belongs to the group of analytical methods and allows
-          to obtain the best combination of grasping points for multi-fingered grippers, starting from only three fingers. The procedure is explained in full, starting from gripper parameters and a RGBD image, through the extraction of the 
-          gripping areas and candidates, to the creation of ranking functions. Experiments are conducted on a widely recognized dataset in both simulated and real-world scenarios, employing a three-fingered gripper to demonstrate the 
-          efficacy of the presented method. The results demonstrate a successful grasping rate of 91.46% in simulation and 81.46% in the real-world with different shaped objects, with an execution time of 120 ms and 83 ms, respectively.
-          In light of these findings, we have successfully matched and enhanced several state-of-the-art methods in terms of accuracy and computational efficiency across both categories with only CPU capabilities.
+          The advent of Large Language Models (LLMs) has provided researchers with another Artificial Intelligence (AI) tool to solve challenging tasks. Despite the negligible likelihood of a reduction in the release pace of these models in the near
+          future, they have captured the attention of researchers in the field. Consequently, numerous academic papers have concentrated on enhancing the efficiency of these models, ignoring a straightforward yet effective task: comparing their performance.
+          In this journal paper, several State-Of-The-Art (SOTA) LLMs from OpenAI, Google DeepMind, Anthropic, xAI and DeepSeek have been analysed in order to solve the same group of robotic grasping tasks with four and five fingered robotic hands, in order
+          to compare their performance. These models, in conjunction with newly developed grasping tasks, have been integrated into the Eureka platform. A comprehensive analysis of the subjects’ performance has been conducted, encompassing the Human
+          Normalised Score (HNS), the Consecutive Successes (CS) they have attained, the quantity of tokens necessary to complete the task, and the economic expense associated with their training.
+          Consequently, optimal performance at a minimal cost is achieved using Gemini 2.0 Flash models, while Claude 3.7 Sonnet would be ideal for researchers with limited computational resources.
           </p>
         </div>
       </div>
@@ -248,8 +237,8 @@
         <div class="columns is-centered">
           <div class="column is-full">
             <figure class="image">
-              <img src="static/images/GeoGraspEvo_results.png" 
-                   alt="Summary of results in simulated and real-world environments."
+              <img src="static/images/LLMs_results1.png" 
+                   alt="Global results obtained using the SpD metric to show the most economic and less computational demanding LLM."
                    class="equal-height">
             </figure>
           </div>     
@@ -258,8 +247,8 @@
         <div class="columns is-centered">
           <div class="column is-full">
             <figure class="image">
-              <img src="static/images/GeoGraspEvo_comparison_2.png" 
-                   alt="Comparison with other analytic and data-driven methods.">
+              <img src="static/images/LLMs_results2.png" 
+                   alt="Global results obtained using the SpT metric to show the most powerful but environmentally friendly LLM.">
             </figure>
           </div>
         </div>
@@ -309,16 +298,16 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-@article{paezXXXXgeograspevo,
-  author={Páez-Ubieta, I.L. and Frau-Alfaro, D. and Puente, S.T.},
-  title={GeoGraspEvo: multifinger grasp pose estimation},
-  journal={IEEE Robotics and Automation Letters (RA-L)},
+@article{XXXXXX,
+  author={Puente, S.T. and Páez-Ubieta, I.L. and Fernández-Herrero, M. and Mateo-Agulló, C.},
+  journal={IEEE Transactions on Robotics}, 
+  title={Comparative of LLM-Generated Rewards for Training RL Agents in Robot Manipulation Tasks}, 
+  year={},
   volume={},
   number={},
   pages={},
-  year={},
-  publisher={IEEE}
-} 
+  doi={}
+}
     </code></pre>
     </div>
 </section> 
@@ -334,8 +323,17 @@
         <ul>
           <li>
            Grant PID2021-122685OB-I00 funded by MICIU/AEI/10.13039/501100011033 and by ERDF/EU.
+           Grant INVA22-02 for visiting research staff of the University of Alicante.
           </li>
         </ul>
+        <h3>
+          Computer facilities were provided through:
+        </h3>
+        <ul>
+          <li>
+           Project IDIFEFER/2020/003.
+          </li>
+
       </div>
     </div>
   </div>
